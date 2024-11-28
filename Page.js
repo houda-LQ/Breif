@@ -35,11 +35,9 @@ alert("commande passée avec succés!");
 //rénitialisation du formulaire
 document.querySelector(".order.form").reset();
 document.querySelector(".total").textContent="750 MAD"
-
-
-
-
 });
+
+
 
 
 

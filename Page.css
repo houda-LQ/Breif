@@ -98,7 +98,7 @@ body {
 
    /* */
    .products {
-    height: 90vh;
+    height: 0%;
     width: 100%;
     display: flex;
     justify-self: center;
@@ -108,11 +108,12 @@ body {
   }
   .products .product-container img{
     object-fit: cover;
-    width:100vw;
-    height:100vw ;
+    width: 100vh;
+    height:100vh;
     object-position: top right;
     position: relative;
-  
+    margin: 5%;
+    border-radius: 20px;
   }
   .products .product-container .product-details{
     position: absolute;
@@ -125,9 +126,102 @@ body {
     justify-content: center;
 
   }  
-  .product-details{
-    
-  }
 
-  
-  
+  .product-image img {
+    width: 30%; /* L'image occupe toute la largeur du conteneur */
+    height: 30%; /* Maintient le ratio de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    object-fit: cover; /* Ajuste l'image pour bien remplir le conteneur */
+}
+
+
+/* Conteneur principal */
+.product1 {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Couleur de fond légère */
+    font-family: Arial, sans-serif;
+}
+
+.product1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Titre en gris foncé */
+}
+
+.product1 p {
+    font-size: 1.2rem;
+    color: #555; /* Sous-titre en gris moyen */
+}
+
+/* Conteneur des cartes produits */
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Ajuste les cartes sur plusieurs lignes si nécessaire */
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+    margin-top: 30px;
+}
+
+/* Carte produit */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 15px;
+    width: 300px; /* Largeur fixe des cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    overflow: hidden; /* Coupe les contenus débordants */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+/* Image produit */
+.product-image img {
+    width: 100%; /* Remplit toute la largeur de la carte */
+    height: 200px; /* Hauteur fixe pour uniformiser les cartes */
+    object-fit: cover; /* Coupe l'image pour bien remplir le conteneur */
+}
+
+/* Détails du produit */
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.product-card .description {
+    font-size: 1rem;
+    color: #777; /* Texte descriptif en gris clair */
+    margin: 0 15px;
+}
+
+.product-card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff6f61; /* Couleur orange vif pour le prix */
+    margin: 10px 15px;
+}
+
+/* Bouton "Add to Cart" */
+.product-card .btn {
+    display: block;
+    width: calc(100% - 30px); /* Largeur ajustée avec les marges */
+    margin: 15px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #db837ba6; /* Couleur orange vif */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #e0554a; /* Couleur légèrement plus foncée au survol */
+}

@@ -96,6 +96,38 @@ body {
     color: red;
   }
 
+   /* */
+   .products {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .products .product-container img{
+    object-fit: cover;
+    width:100vw;
+    height:100vw ;
+    object-position: top right;
+    position: relative;
+  
+  }
+  .products .product-container .product-details{
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    transform: translateY(-50%);
+    display: flow;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+  }  
+  .product-details{
+    
+  }
 
   
   

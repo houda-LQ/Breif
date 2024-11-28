@@ -25,5 +25,27 @@
       <a href="#panier" class="bag-icon"><i class="fas fa-shopping-bag"></i></a>
     </div>
   </nav>
+  
+    <!--formulaire de commande-->
+    <div class="form-container">
+       <h2>Passer votre commande</h2>
+    <form class="order form">
+      <label for ="name">Nom et Prénom</label>
+      <input type="text" class="name" placeholder="Votre nom complet" required>
+       <label>Email</label>
+       <input type="text" class="email" placeholder="Votre email" required>
+       <label>Adress</label>
+       <input type="text" class="adress" placeholder="Votre adresse" required>
+       <label>Numéro de téléphone</label>
+       <input type="tel" class="phone" placeholder="Votre numéro" required>
+       <label>Quantité</label>
+       <input type="number" class="quantity" min="1" value="1" required>
+       <h3>Total <span class="total">750 MAD</span></h3>
+       <button type="submit">Commander</button>
+
+    </form>
+    <!-- <p class="errorMessage" class="error"></p> -->
+  </div>
+ 
 </body>
 </html>

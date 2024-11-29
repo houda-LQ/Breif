@@ -4,12 +4,8 @@ body {
   font-size: 18px;
 }
 
-/* Styles pour tablettes */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
+
+
 
 
 
@@ -115,15 +111,8 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
-/* Responsiveness */
-@media (max-width: 768px) {
-  .navbar-left, .navbar-right {
-    display: none;
-  }
-  .menu-toggle {
-    display: block;
-  }
-}
+
+
 
 
 

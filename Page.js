@@ -29,6 +29,13 @@ if(!phoneRegex.test(phone)){
     alert("veuillez entrer un numéro de téléphone")
     return;
 }
+
+//vérification du gmail
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Veuillez entrer un email valide.");
+    return;
+} 
 //confirmation de la commande
 alert("commande passée avec succés!");
 
@@ -36,6 +43,14 @@ alert("commande passée avec succés!");
 document.querySelector(".order.form").reset();
 document.querySelector(".total").textContent="750 MAD"
 });
+
+// fonctionnement de menu
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('menu-mobile');
+    mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+  });
+  
+
 
 
 

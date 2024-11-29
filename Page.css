@@ -1,4 +1,23 @@
-/* Global styles */
+
+/* Styles globaux pour grands écrans */
+body {
+  font-size: 18px;
+}
+
+/* Styles pour tablettes */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -47,6 +66,7 @@ body {
   border-radius: 50%;
 }
 
+
 .navbar a {
   text-decoration: none;
   color: #333;
@@ -68,6 +88,47 @@ body {
 .bag-icon i:hover {
   color: #f380d0;
 }
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #444;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.menu-mobile li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.menu-mobile li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar-left, .navbar-right {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
 
 .form-container{
   max-width: 500px;
@@ -212,7 +273,9 @@ body {
   height: 30%; /* Maintient le ratio de l'image */
   border-radius: 10px; /* Coins arrondis */
   object-fit: cover; /* Ajuste l'image pour bien remplir le conteneur */
+  margin: 2%;
 }
+
 
 
 /* Conteneur principal */
@@ -252,7 +315,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
   overflow: hidden; /* Coupe les contenus débordants */
   transition: transform 0.3s, box-shadow 0.3s;
+  
 }
+
+
+
 
 .product-card:hover {
   transform: translateY(-10px); /* Légère élévation au survol */

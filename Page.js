@@ -49,7 +49,15 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     const mobileMenu = document.getElementById('menu-mobile');
     mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
   });
-  
+//   bouton 
+document.querySelectorAll(".btn").forEach(function(button){
+    button.addEventListener("click",function(){
+        document.querySelector(".form-container").scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+
+});
 
 
 

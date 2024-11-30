@@ -7,6 +7,7 @@ document.querySelector(".quantity").addEventListener("input", function () {
 
 });
 
+
 //validation du formulaire
 document.querySelector(".order.form").addEventListener("submit",function(e){
 e.preventDefault();//empeche l'envoi du formulaire par défaut
@@ -44,11 +45,13 @@ document.querySelector(".order.form").reset();
 document.querySelector(".total").textContent="750 MAD"
 });
 
+
 // fonctionnement de menu
 document.getElementById('menu-toggle').addEventListener('click', function () {
     const mobileMenu = document.getElementById('menu-mobile');
     mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
   });
+  
 //   bouton 
 document.querySelectorAll(".btn").forEach(function(button){
     button.addEventListener("click",function(){

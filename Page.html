@@ -14,6 +14,10 @@
 
 <body>
   <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+   
     <div class="navbar-left">
       <a href="#accueil">Accueil</a>
       <a href="#produits">Produits</a>
@@ -25,8 +29,19 @@
       <a href="#apropos">À propos</a>
       <a href="#contact">Contact</a>
       <a href="#panier" class="bag-icon"><i class="fas fa-shopping-bag"></i></a>
+    
     </div>
+    <ul class="menu-mobile" id="menu-mobile">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#produits">Produits</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#panier" class="bag-icon"><i class="fas fa-shopping-bag"></i></a></li>
+    </ul>
+  
   </nav>
+
+  
 
   <section class="products">
     <div class="product-container">
@@ -42,8 +57,8 @@
           <li><strong>Notes principales:</strong> Jasmin, Ambre, Vanille</li>
           <li><strong>Prix:</strong> 750 MAD</li>
           <li><strong>Disponibilité:</strong> En stock</li>
-        </ul>
-        <button class="btn">Commander</button>
+      </ul>
+      <button class="order-btn">Commander</button>
       </div>
     </div>
   </section>
@@ -58,42 +73,42 @@
         </div>
         <h3>Blossom</h3>
         <p class="description">un floral délicat au charme lumineux.</p>
-        <p class="price">660 MAD</p>
+        <p class="price">750 MAD</p>
         <button class="btn">Ajouter au panier</button>
-      </div>
+      </div>   
 
       <div class="product-card">
-        <div class="product-image">
-          <img src="jasmine.jpeg" alt="Jasmine" />
+          <div class="product-image">
+            <img src="jasmine.jpeg" alt="Jasmine" />
+          </div>
+          
+          <h3>Jasmine</h3>
+          <p class="description">l'élégance florale d'une fragance douce et raffinée.</p>
+          <p class="price">1000 MAD</p>
+          <button class="btn">Add to Cart</button>
         </div>
-
-        <h3>Jasmine</h3>
-        <p class="description">l'élégance florale d'une fragance douce et raffinée.</p>
-        <p class="price">1000 MAD</p>
-        <button class="btn">Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-          <img src="jasmine.jpeg" alt="Jasmine" />
+      
+        <div class="product-card">
+          <div class="product-image">
+            <img src="jasmine.jpeg"  alt="Jasmine" />
+          </div>
+          
+          <h3>Caramel</h3>
+          <p class="description">Une gourmandise parfumée aux notes sucrées.</p>
+          <p class="price">990 MAD</p>
+          <button class="btn">Add to Cart</button>
         </div>
-
-        <h3>Caramel</h3>
-        <p class="description">Une gourmandise parfumée aux notes sucrées.</p>
-        <p class="price">990 MAD</p>
-        <button class="btn">Add to Cart</button>
-      </div>
 
   </section>
+  
 
 
-
-
-
-
-  <!--formulaire de commande-->
-  <div class="form-container">
-    <h2>Passer votre commande</h2>
+  
+  
+  
+    <!--formulaire de commande-->
+    <div class="form-container">
+       <h2>Passer votre commande</h2>
     <form class="order form">
       <label for="name">Nom et Prénom</label>
       <input type="text" class="name" placeholder="Votre nom complet" required>

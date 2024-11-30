@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shineBeauty</title>
-   
-     <!-- Lien vers Font Awesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shineBeauty</title>
+
+  <!-- Lien vers Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="page.css">
-  
+
 </head>
+
 <body>
   <nav class="navbar">
     <div class="navbar-left">
@@ -26,22 +28,22 @@
     </div>
   </nav>
 
-  <section class="products" >
+  <section class="products">
     <div class="product-container">
-      
-       <div class="product-image"></div>
-     
+
+      <div class="product-image"></div>
+
       <div class="product-details">
         <h3> Parfum ShineBeauty </h3>
         <h1> Brume de Luxe</h1>
-       
+
         <ul>
           <li><strong>Taille:</strong> 100ml</li>
           <li><strong>Notes principales:</strong> Jasmin, Ambre, Vanille</li>
           <li><strong>Prix:</strong> 750 MAD</li>
           <li><strong>Disponibilité:</strong> En stock</li>
-      </ul>
-      <button class="order-btn">Commander</button>
+        </ul>
+        <button class="btn">Commander</button>
       </div>
     </div>
   </section>
@@ -58,60 +60,81 @@
         <p class="description">un floral délicat au charme lumineux.</p>
         <p class="price">660 MAD</p>
         <button class="btn">Ajouter au panier</button>
-      </div>   
+      </div>
 
       <div class="product-card">
-          <div class="product-image">
-            <img src="jasmine.jpeg" alt="Jasmine" />
-          </div>
-          
-          <h3>Jasmine</h3>
-          <p class="description">l'élégance florale d'une fragance douce et raffinée.</p>
-          <p class="price">1000 MAD</p>
-          <button class="btn">Add to Cart</button>
+        <div class="product-image">
+          <img src="jasmine.jpeg" alt="Jasmine" />
         </div>
-      
-        <div class="product-card">
-          <div class="product-image">
-            <img src="jasmine.jpeg"  alt="Jasmine" />
-          </div>
-          
-          <h3>Caramel</h3>
-          <p class="description">Une gourmandise parfumée aux notes sucrées.</p>
-          <p class="price">990 MAD</p>
-          <button class="btn">Add to Cart</button>
+
+        <h3>Jasmine</h3>
+        <p class="description">l'élégance florale d'une fragance douce et raffinée.</p>
+        <p class="price">1000 MAD</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="jasmine.jpeg" alt="Jasmine" />
         </div>
+
+        <h3>Caramel</h3>
+        <p class="description">Une gourmandise parfumée aux notes sucrées.</p>
+        <p class="price">990 MAD</p>
+        <button class="btn">Add to Cart</button>
+      </div>
 
   </section>
-  
 
 
-  
-  
-  
-    <!--formulaire de commande-->
-    <div class="form-container">
-       <h2>Passer votre commande</h2>
+
+
+
+
+  <!--formulaire de commande-->
+  <div class="form-container">
+    <h2>Passer votre commande</h2>
     <form class="order form">
-      <label for ="name">Nom et Prénom</label>
+      <label for="name">Nom et Prénom</label>
       <input type="text" class="name" placeholder="Votre nom complet" required>
-       <label>Email</label>
-       <input type="text" class="email" placeholder="Votre email" required>
-       <label>Adress</label>
-       <input type="text" class="adress" placeholder="Votre adresse" required>
-       <label>Numéro de téléphone</label>
-       <input type="tel" class="phone" placeholder="Votre numéro" required>
-       <label>Quantité</label>
-       <input type="number" class="quantity" min="1" value="1" required>
-       <h3>Total <span class="total">750 MAD</span></h3>
-       <button type="submit">Commander</button>
+      <label>Email</label>
+      <input type="text" class="email" placeholder="Votre email" required>
+      <label>Adress</label>
+      <input type="text" class="adress" placeholder="Votre adresse" required>
+      <label>Numéro de téléphone</label>
+      <input type="tel" class="phone" placeholder="Votre numéro" required>
+      <label>Quantité</label>
+      <input type="number" class="quantity" min="1" value="1" required>
+      <h3>Total <span class="total">750 MAD</span></h3>
+      <button type="submit">Commander</button>
 
     </form>
     <p class="errorMessage" class="error"></p>
   </div>
   <script src="Page.js"></script>
- 
 
+
+
+  <!-- Tableau des commandes passées -->
+  <div class="commande-table">
+    <h2>Tableau des Commandes Passées</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom et Prénom</th>
+          <th>Email</th>
+          <th>Adresse</th>
+          <th>Téléphone</th>
+          <th>Quantité</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="commande-tbody">
+        <!-- Les lignes de commande seront ajoutées ici -->
+      </tbody>
+    </table>
+  </div>
+  <!--  -->
 
   <footer class="footer">
     <div class="footer-container">
@@ -119,7 +142,7 @@
         <img src="logo.png" alt="ShineBeauty Logo">
         <p>ShineBeauty - Votre parfum de luxe</p>
       </div>
-  
+
       <div class="footer-links">
         <h3>Liens utiles</h3>
         <ul>
@@ -129,7 +152,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-  
+
       <div class="footer-socials">
         <h3>Suivez-nous</h3>
         <div class="social-icons">
@@ -144,5 +167,8 @@
       <p>&copy; 2024 ShineBeauty. Tous droits réservés.</p>
     </div>
   </footer>
+
+  </div>
 </body>
+
 </html>

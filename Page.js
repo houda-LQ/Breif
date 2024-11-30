@@ -42,3 +42,43 @@ document.querySelector(".total").textContent="750 MAD"
 });
 
 
+
+
+
+
+
+
+
+// Fonction pour ajouter une commande au tableau
+document.getElementById('commande-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page lors de l'envoi du formulaire
+
+    // Récupérer les valeurs des champs du formulaire
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var adress = document.getElementById('adress').value;
+    var phone = document.getElementById('phone').value;
+    var quantity = document.getElementById('quantity').value;
+    var total = document.getElementById('total').textContent;
+
+    // Créer une nouvelle ligne dans le tableau
+    var tableBody = document.getElementById('commande-tbody');
+    var newRow = document.createElement('tr');
+
+    // Ajouter les données dans les cellules
+    newRow.innerHTML = `
+      <td>${name}</td>
+      <td>${email}</td>
+      <td>${adress}</td>
+      <td>${phone}</td>
+      <td>${quantity}</td>
+      <td>${total}</td>
+    `;
+
+    // Ajouter la nouvelle ligne au tableau
+    tableBody.appendChild(newRow);
+
+    // Réinitialiser le formulaire après soumission
+    document.getElementById('commande-form').reset();
+  });
+  
